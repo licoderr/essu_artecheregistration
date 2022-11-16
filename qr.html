@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styleqr.css">
+	<title>STUDENT REGISTRATION </title>
+</head>
+<body>
+<div class="container" >
+	<div class="header"> </div>
+	<h2 class="upper"> QR CODE GENERATOR </h2>
+
+	<div class="input-form">
+	<label>Please Input again your Student Number to Generate your QR Code!</label>
+	<br>
+	<br>
+	<input type="tel"  pattern="[0-9]{2}-[0-9]{5}" class="qr-studnum" placeholder="SN NO. 00-00000" name="stu_id" onkeydown="return/[0-9-\]/i.test(event.key)" maxlength="8" >
+	<br>
+	<button class="generate-btn">GENERATE</button>
+	<div class="qr-code">
+		<img src="qrimage.jpg" class="qr-image" >
+	</div>
+</div>
+</div>
+<script>
+
+	
+		var container = document.querySelector(".container");
+		var generateBtn = document.querySelector(".generate-btn");
+		var qrInput = document.querySelector(".qr-studnum");
+		var qrImg = document.querySelector(".qr-image");
+
+		generateBtn.onclick = function(){		
+			if (qrInput.value.length > 0) {
+
+	
+			generateBtn.innerText = "QR CODE GENERATING ...";
+				qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=170x170&data="+qrInput.value;
+				qrImg.onload = function(){
+					generateBtn.innerText = "QR GENERATED";
+				}
+			}
+		}
+</script>
+
+</body>
+</html>

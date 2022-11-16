@@ -1,0 +1,161 @@
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	 
+}
+
+
+body{
+	width: 100%;
+	height: auto;
+	background-image: url('ESSU-campus.jpg');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	background-color: rgb(207, 209, 203);
+	width: 500px;
+	height: 100;
+	border-radius: 20px;
+	padding: 20px;
+	transition: .1s;
+	margin-top: 50px;
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+    border-radius: 3rem;
+
+}
+.upper{
+	text-align: center;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 26px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.h2{
+	text-align: center;
+	font-family:sans-serif;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+input{
+	margin-bottom: 10px;
+	font-style: normal;
+	font-family: myFirstFont;
+
+	font-size: medium;
+	border-radius: 10px;
+	border-color: aliceblue;
+	text-align: center;
+	font-size: 20px;
+	text-transform:uppercase;
+	
+}
+label{
+	font-size: normal;
+	font-family: MyFirstFont;
+	text-align: center;
+}
+.input-form{
+	font-family:'Century Gothic';
+	font-size: medium;
+	margin-bottom: 5px;
+	font-size: 20px;
+
+
+}
+.qr-image{
+	display: block;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+	padding: 10px;
+	background-color: white;
+
+	
+}
+.qr-code{
+	display: block;
+	justify-content: center;
+	width: 100%;
+    height: 100%;
+	border-radius: 7px;
+	
+}
+.header h1{
+	font-size: 10rem;
+	font-weight: 500;
+	margin-bottom: 3px;
+	align-items: center;
+}
+input, button{
+	width: 100%;
+	height: 50px;
+	outline: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.radio-container input{
+	width: 30%;
+	height: 30%;
+
+}
+.submit-btn{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+button{
+	width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 15px 20px;
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: ease .3s;
+    font-weight: bold; 
+    font-size: 20px;
+    grid-column: 1 / -1;
+	font-size: larger;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+button:hover {
+    background: #92bc63;
+    color: #000000;
+  } 
+
+input:hover{
+ 	background: #d2d2d2;
+    color: #000000;
+}
+
+label:hover{
+	color: #e4ffb9;
+}
+.container.active{
+	height: 822px;
+}
+.container.active .qr-code{
+	opacity: 1;
+	pointer-events: auto;
+	align-items: center;
+}
